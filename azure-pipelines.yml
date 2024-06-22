@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  vmImage: windows-latest
+
+variables:
+  imageName: 'pipelines-javascript-docker'
+
+steps:
+  - task: Docker@2
+    inputs:
+      command: 'build'
+      repository: $(imageName)
+      Dockerfile: app/Dockerfile
