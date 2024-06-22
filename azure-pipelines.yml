@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: windows-latest
+  vmImage: Azure Pipelines
 
 variables:
   imageName: 'pipelines-javascript-docker'
